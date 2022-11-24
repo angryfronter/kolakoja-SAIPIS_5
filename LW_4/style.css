@@ -1,0 +1,38 @@
+body{
+    background-color:#70c1c4;
+}
+input{
+    border-color:black;
+    background-color:#70c1c4;
+    
+}
+select{
+    display: block;
+    margin-top: 10px;
+}
+button{
+    margin: 15px;
+    background-color: #b0d8c4;
+}
+
+.section-wrapper{
+    display: flex;
+    width:1000px;
+    justify-content: space-between;
+    margin: 25px;
+}
+input:focus{
+    border-width: 1px;
+    background-color: #e1fdfd;
+    border-color: red;
+}
+fieldset{
+    background-color:lightgray;
+}
+textarea{
+    display: block;
+}
+
+.margin{
+  margin-left: 130px;
+}

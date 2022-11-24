@@ -1,0 +1,11 @@
+.text {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    cursor: pointer;
+    opacity: 1;
+    transition: 1s;
+  }
+  .hide {
+    opacity: 0;
+  }

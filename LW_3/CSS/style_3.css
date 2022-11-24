@@ -1,0 +1,345 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient( rgb(8, 111, 151), rgb(7, 98, 134));
+    margin: 0px;
+    width: 1365px;
+    height: 1131px;
+}
+
+section {
+    display: flex;
+    width: 1366px;
+    height: 932px;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background: linear-gradient(rgb(211, 242, 247), rgb(8, 111, 151)) ;
+    width: 1366px;
+    height: 125px;
+}
+
+footer {
+    background: linear-gradient(rgb(7, 98, 134), rgb(5, 69, 97));
+    /* border: 1px solid black; */
+    width: 1366px;
+    height: 75px;
+    padding-top:40px ;
+}
+
+#article {
+    padding: 0px;
+    background-image: url('https://www.bsuir.by/m/12_104571_0_120647.png');
+    background-repeat: no-repeat ;
+    background-size: 796px 924px ;
+    background-origin: border-box ;
+    border-radius: 40px;
+    border: 4px solid aquamarine;
+    opacity: 1;
+    /* border: 1px solid rgb(37, 0, 248); */
+    width: 800px;
+    height: 932px;
+}
+
+nav {
+    background: linear-gradient( rgb(8, 111, 151), rgb(7, 98, 134));
+    /* border: 1px solid rgb(87, 58, 255); */
+    width: 283px;
+    text-align: center;
+    height: 932px;
+}
+
+aside {
+    background: linear-gradient( rgb(8, 111, 151), rgb(7, 98, 134));
+    /* border: 1px solid red; */
+    width: 283px;
+    height: 932px;
+}
+
+label {
+    display: block;
+    width: 550px;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+
+
+
+
+form {
+    width: 750px;
+}
+
+h3 {
+    margin-left: 15px;
+    margin-top:5px;
+    color: antiquewhite;
+}
+
+fieldset {
+    border: 4px solid aquamarine;
+    margin: 10px;
+    border-radius: 30px;
+    font-weight: 700;
+    color: rgb(47, 104, 47);
+    
+}
+
+input[type="text"] {
+    width: 300px;
+    height: 35px;
+    border: 5px solid white;
+    border-radius: 15px;
+    background-color: aqua;
+    color: darkcyan;
+}
+
+input[type="week"] {
+    width: 300px;
+    height: 35px;
+    border: 5px solid rgb(231, 186, 186);
+    border-radius: 15px;
+    background-color: rgb(78, 130, 207);
+    color: rgb(241, 46, 46);
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+}
+
+input[type="number"] {
+    background-color: black;
+    border-radius: 15px;
+    color:rgb(145, 255, 2);
+    height: 30px;
+    font-size: 25px;
+}
+
+input[type="email"] {
+    width: 300px;
+    height: 35px;
+    border: 5px solid rgb(230, 255, 3);
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 0, 191);
+}
+
+#nam_o_u {
+    margin-left: 25px;
+    width: 600px;
+    height: 50px;
+    border: 5px solid aquamarine;
+    border-radius: 5px;
+    background-color: rgb(8, 111, 151);
+    color: rgb(30, 233, 182);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    margin-top: 50px;
+    margin-bottom: 2px;
+    padding-left: 25px;
+    color: rgb(33, 226, 15);
+}
+
+#inse {
+    width: 300px;
+    height: 25px;
+    border: 5px solid rgb(145, 255, 2);
+    border-radius: 5px;
+    background-color: rgb(255, 0, 242);
+    color: rgb(30, 233, 182);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+    font-size: 16px;
+    color: rgb(193, 212, 21);
+    
+}
+
+.faculty {
+    font-size: 20px;
+    color: rgb(255, 0, 242);
+}
+
+#soder {
+    text-align: center;
+    width: 767px;
+    height: 900px;
+}
+
+#soder_ {
+    text-align: center;
+    width: 717px;
+    height: 742px;
+}
+
+#buttons {
+    width: 650px;
+    height: 100px;
+    padding: 25px;
+}
+
+input[type="submit"], input[type="reset"] {
+    width:200px;
+    height: 50px;
+    border-radius: 25px;
+    border: 5px solid pink;
+    background-color: brown;
+    font-size: 24px;
+    font-weight: 700;
+}
+ 
+input[type="reset"] {
+    float: right;
+    /* margin-left: 100px; */
+} 
+
+input[type="submit"]:hover, input[type="reset"]:hover{
+    background-color:rgb(8, 111, 151);
+}
+
+#foot {
+    margin: 0px;
+    text-align: center;
+    vertical-align: bottom;
+    color : grey;
+}
+
+/* Модальный (фон) */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Оставаться на месте */
+    z-index: 1; /* Сидеть на вершине */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включите прокрутку, если это необходимо */
+    background-color: rgb(0, 0, 0); /* Цвет запасной вариант */
+    background-color: rgba(0,0,0,0.4); /* Черный с непрозрачностью */
+  }
+  
+  /* Модальное содержание/коробка */
+  .modal-content {
+    background: linear-gradient( rgb(8, 111, 151), rgb(7, 98, 134));
+    margin: 15% auto; /* 15% сверху и по центру */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Может быть больше или меньше, в зависимости от размера экрана */
+  }
+  
+  /* Кнопка закрытия */
+  .close {
+    color: rgb(157, 255, 0);
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 15px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  table.table_ {
+    border: 3px solid aquamarine;
+    background-color: rgb(8, 111, 151);
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+table.table_ td, table.table_ th {
+    border: 1px solid aquamarine;
+    padding: 3px 3px;
+}
+
+table.table_ tbody td {
+    font-size: 13px;
+    color: rgb(255, 199, 209);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table.table_ tr:nth-child(even) {
+    background: rgba(33, 105, 55, 0.81);
+}
+
+table.table_ thead {
+    background: rgba(33, 60, 105, 0.81);
+    
+}
+
+table.table_ thead th {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(208, 228, 245);
+    border-left: 2px solid aquamarine;
+}
+
+table.table_ thead th:first-child {
+    border-left: none;
+}
+
+#mai {
+    border: 5px solid aquamarine;
+    border-radius: 30px;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 35px;
+    background-color: rgba(7, 163, 253, 0.774);
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aquamarine;
+}
+
+#result {
+    border: 5px solid aquamarine;
+    border-radius: 30px;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    margin-left: 50px;
+    /* margin-top: 35px; */
+    background-color: rgba(7, 163, 253, 0.774);
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aquamarine;
+}
+
+#result:hover, #mai:hover {
+    background-color: aquamarine;
+}
+
+#resetButton {
+    width:200px;
+    height: 50px;
+    border-radius: 25px;
+    border: 5px solid aquamarine;
+    background-color: rgb(8, 111, 151);
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-left: 250px;
+}
+
+#myBtn {
+    background-color: rgba(0,0,0,0);
+    border: 0px;
+    width: 150px;
+    height: 150px;
+}

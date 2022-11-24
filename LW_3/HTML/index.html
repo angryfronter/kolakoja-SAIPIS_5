@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="D:\COUrse\САиПИС\LW_3\CSS\style_3.css" rel="stylesheet">
+    
+    <title>Опрос студента</title>
+</head>
+<body>
+    <header>
+    
+    </header>
+
+    <section>
+        <article id="article">
+            <form method="post" id="stud">
+                <fieldset id="soder">
+                    <legend align="center" style="font-size: 24px; color: aqua; font-weight:700;">
+                        Опрос о проблемах обучения в вузе
+                    </legend>
+                    <fieldset id="soder_">
+                        <label for="intx">
+                            Ваше имя
+                            <br>
+                            <input type="text" name="intx" id="intx" required placeholder="Иван">
+                        </label>
+                        <br>
+                        <label for="inwe">
+                            Ваш год и неделя рождения
+                            <br>
+                            <input type="week" name="inwe" id="inwe" required>
+                        </label>
+                        <br>
+                        <!-- <div class="checkbox-group required"> -->
+                            <label for="timetable">
+                                Проблемы возникшее во время обучения<br>
+                            <input type="checkbox" class="req" name="inch" value="Расписание"><span>Неудобное расписание</span>
+                        </label>
+                        <label for="teacher">
+                            <input type="checkbox" class="req" name="inch" value="Преподаватели"><span>Несправедливые преподаватели</span>
+                        </label>
+                        <label for="dominotary">
+                            <input type="checkbox" class="req" name="inch" value="Общежитие"><span>Проблемы с общежитием</span>
+                        </label>
+                        <label for="pars">
+                            <input type="checkbox" class="req" name="inch" value="Учебные дисциплины"><span>Сложные предметы</span>
+                        </label>
+                        <label for="other">
+                            <input type="checkbox" class="req" name="inch" value="Другие проблемы"><span>Другое</span>
+                        </label>
+                    <!-- </div> -->
+                        <br>
+                        <label for="inse">
+                            Форма обучения
+                            <br>
+                            <select name="inse" id="inse">
+                                <option value="Не выбрана">Не выбрано</option>
+                                <option value="Дневная">Дневная</option>
+                                <option value="Заочная">Заочная</option>
+                                <option value="Параллельная">Параллельное</option>
+                            </select>
+                        </label>
+                        <br>
+                            <label for="ief">
+                                Факультет<br><input class="rad_" type="radio" name="inra" value="ИЭФ" checked><span class="faculty">ИЭФ</span>
+                            </label>
+                            <label for="fib">
+                                <input class="rad_" type="radio" name="inra" value="ФИБ"><span class="faculty">ФИБ</span>
+                            </label>
+                            <label for="vf">
+                                <input class="rad_" type="radio" name="inra" value="ВФ"><span class="faculty">ВФ</span>
+                            </label>
+                            <label for="fity">
+                                <input class="rad_" type="radio" name="inra" value="ФИТУ"><span class="faculty">ФИТУ</span>
+                            </label>
+                            <label for="ksis">
+                                <input class="rad_" type="radio" name="inra" value="ФКСИС"><span class="faculty">ФКСИС</span>
+                            </label>
+                            <label for="fre">
+                              <input class="rad_" type="radio" name="inra" value="ФРЭ"><span class="faculty">ФРЭ</span>
+                            </label>
+                            <label for="fkp">
+                                <input class="rad_" type="radio" name="inra" value="ФКП"><span class="faculty">ФКП</span>
+                            </label>
+                        <br>
+                        <label for="innum">
+                            Курс<br><input type="number" name="innum" min="1" max="4" required id="innum">
+                        </label>
+                        <br>
+                        <label for="inem">
+                            Ваш email<br><input type="email" name="inem"  placeholder="ivanov.ivan@gmail.ru" required id="inem">
+                        </label>
+
+                    </fieldset>
+                    
+                    <div id="buttons">
+                        <input type="submit" id="submit"/>
+                        <input type="reset" id="reset"/>
+                    </div>
+                    
+                </fieldset>
+                
+            </form>
+        </article>
+
+
+        <nav>
+            <div id="mai">
+                <a href="index.html">Главная</a>
+            </div>
+            <br>
+            <div id="result">
+                <a href="index2.html" >Результаты</a>
+            </div>
+        </nav>
+
+
+        <aside>
+            <button id="myBtn"></button>
+
+<!-- Модальный -->
+    <div id="myModal"  class="modal">
+
+  <!-- Модальное содержание -->
+    <div class="modal-content" id="article">
+        <span class="close">&times;</span>
+        <h3>Результирующа таблица</h3>
+            <table id="tableM" class="table_">
+                <thead>
+                    <tr>
+                        <th>Имя</th>
+                        <th>Год и неделя рождения</th>
+                        <th>Проблемы</th>
+                        <th>Форма обучения</th>
+                        <th>Факультет</th>
+                        <th>Курс</th>
+                        <th>Почта</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    </tr>
+                </tbody>
+            </table>
+     </div>
+
+    </div>
+        </aside>
+    </section>
+    
+
+    <footer>
+        <p id="foot">© 2022 All rights reserved.</p>
+    </footer>
+    <script src="js_1.js"></script>
+</body>
+</html>

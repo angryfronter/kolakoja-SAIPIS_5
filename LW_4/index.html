@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\11022\Desktop\¦¬¦-¦-TЛ ¦¦¦-TВTП\¦Ы¦-¦-¦-_4\style.css">
+</head>
+<body>
+    
+<div class="main-wrapper">
+   
+  <form>
+    <fieldset>
+        <div class="section-wrapper">
+            
+            <div class="section">
+                <input id="text" class="text1" type="text" placeholder="enter  text"  title="enter text" >
+             <select  class="select-color" id="color1" name="colors" onchange="changeTextColor1()">
+                <option  disabled selected value="Choose color">Выберите текст</option>
+                <option  style="background-color:#000000" value="#000000">черный</option> 
+                <option  style="background-color:#ffff00" value="#ffff00">желтый</option> 
+                <option  style="background-color:#ff0000" value="#ff0000">красный</option> 
+                <option   style="background-color:#8099E8" value="#8099E8">синий</option> 
+              </select>  
+            </div>
+    
+          <div class="section">
+            <input  id="text" class="text2" type="text" placeholder="enter  text"  title="enter  text" >
+            <select  class="select-color" id="color2" name="colors" onchange="changeTextColor2()">
+             <option  disabled selected value="Choose color">Выберите текст</option>
+             <option  style="background-color:#000000" value="#000000">черный</option> 
+             <option  style="background-color:#ffff00" value="#ffff00">желтый</option> 
+             <option  style="background-color:#ff0000" value="#ff0000">красный</option> 
+             <option   style="background-color:#8099E8" value="#8099E8">синий</option> 
+           </select>
+          </div>
+    
+          <div class="section">
+            <input  id="text" class="text3" type="text" placeholder="enter  text"  title="enter  text" >
+            <select class="select-color" id="color3" name="colors" onchange="changeTextColor3()">
+                <option  disabled selected value="Choose color">Выберите текст</option>
+                <option  style="background-color:#000000" value="#000000">черный</option> 
+                <option  style="background-color:#ffff00" value="#ffff00">желтый</option> 
+                <option  style="background-color:#ff0000" value="#ff0000">красный</option> 
+                <option   style="background-color:#8099E8" value="#8099E8">синий</option> 
+              </select>
+          </div>
+    
+          <div class="section">
+            <input  id="text" class="text4" type="text" placeholder="enter  text"  title="enter  text" >
+              <select class="select-color" id="color4" name="colors" onchange="changeTextColor4()">
+                <option  disabled selected value="Choose color">Выберите текст</option>
+                <option  style="background-color:#000000" value="#000000">черный</option> 
+                <option  style="background-color:#ffff00" value="#ffff00">желтый</option> 
+                <option  style="background-color:#ff0000" value="#ff0000">красный</option> 
+                <option   style="background-color:#8099E8" value="#8099E8">синий</option> 
+              </select>
+          </div>
+        </div>
+
+        <textarea disabled class = "textar" name="textar" id="textar" cols="40" rows="5"></textarea>
+
+          
+        <button id="inact" type="reset" >Очистить и отключить</button>
+        <button id="act"  >Включить</button>
+        <button id="btn2">Кнопка 2</button>
+        <button id="btn3">Кнопка 3</button>
+      </fieldset>
+  </form>
+    
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

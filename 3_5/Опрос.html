@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="D:\САИПИС_5_лабы\3_5\styly3.css" rel="stylesheet">
+    <link href="D:\САИПИС_5_лабы\LW_3\CSS\style_3.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+    </header>
+<!--  -->
+    <section>
+        <article id="article">
+    <art method="post" id="stud">
+        <form id="soder">
+            <legend align="center">
+    <h1>Опрос</h1>
+            </legend>
+<fieldset id="soder_">
+
+    <!-- INPUT TEXT -->
+<label for="intx">
+Ваше имя:
+<br>
+<input type="text" name="intx" id="intx" required placeholder="Введите имя">
+<br>
+Ваша Фамилия:
+<br>
+<input type="text" name="intx" id="intx" required placeholder="Введите фамилию">
+<br>
+</label>
+<br>
+
+<!-- CHECKBOX -->
+<label for="">
+    Выберите модель ноутбука:
+    <br>
+    <input type="checkbox" class="req" name="inch" value="ASUS"><span>ASUS</span>
+</label>
+<label for="">
+    <input type="checkbox" class="req" name="inch" value="LENOVO"><span>LENOVO</span>
+</label>
+<label for="">
+    <input type="checkbox" class="req" name="inch" value="ACER"><span>ACER</span>
+</label>
+<label for="">
+    <input type="checkbox" class="req" name="inch" value="HP"><span>HP</span>
+</label>
+<label for="">
+    <input type="checkbox" class="req" name="inch" value="APPLE"><span>APPLE</span>
+</label>
+<br>
+
+<!-- OPTION VALUE -->
+<label for="inse">
+    Выберите нужно кло-во гб оперативной памяти:
+    <br>
+    <select name="inse" id="inse">
+        <option value="4 гб">4 гб</option>
+        <option value="6 гб">6 гб</option>
+        <option value="8 гб">8 гб</option>
+        <option value="16 гб">16 гб</option>
+    </select>
+</label>
+<br>
+
+<!-- RADIO -->
+    <label for="">
+        Выберите нужное состояние ноутбука:
+        <br>
+        <input class="rad_" type="radio" name="inra" value="Б/У" checked><span class="">Б/У</span>
+    </label>
+    <label for="">
+        <input class="rad_" type="radio" name="inra" value="NEW"><span class="">NEW</span>
+    </label>
+    <br>
+
+    <!-- EMAIL  -->
+<label for="inem">
+Введите ваш email для feedbackа о существующих ноутбуках:
+<br>
+<input type="email" name="inem" placeholder="Например: 123sl@gmail.com" required id="inem">
+</label>
+
+<!-- REQUIREMENTS (TEXTAREA)-->
+<label for="">
+    Напишите ваши пожелание по поводу ноутбука(мы их учтём!):
+    <br>
+    <textarea rows="3" cols="14" name="comment" id="comment" placeholder="Ваши пожелания..."></textarea>
+</label>
+
+<!-- Закрытие FIELDa -->
+</fieldset>
+
+<!-- BUTTONS -->
+<div id="buttons">
+<input type="submit" id="submit">
+<input type="reset" id="reset">
+</div>
+</form>
+</article>
+
+<!-- NAV -->
+<nav>
+    <div id="mai">
+        <a href="Опрос.html">Главная</a>
+    </div>
+    <br>
+    <div id="result">
+<a href="Опрос2.html">Результаты</a>
+    </div>
+</nav>
+
+<!-- ASIDE -->
+<aside>
+    <button id="myBtn"></button>
+    <!-- MODALNIY -->
+    <div id="myModal" class="modal">
+        <!-- MODAL SODERZHANIE -->
+        <div class="modal-content" id="article">
+            <span class="close">&times;</span>
+            <h3>Результаты</h3>
+            <table id="tableM" class="table_">
+                <thead id="tableM" class="table_">
+                    <tr>
+                        <th>Имя</th>
+                        <th>Фамилия</th>
+                        <th>Модель ноутбука</th>
+                        <th>Гб оперативной памяти</th>
+                        <th>EMAIL</th>
+                        <th>Пожелания</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</aside>
+    </section>
+
+    <!-- FOOTER -->
+<footer>
+    <p id="foot">© 2022 All rights reserved.</p>
+</footer>    
+<script src="Опрос.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<p>1 вопрос<br> Ваша фамилия: </p>
+<input type="text" id="lastname" placeholder="Фамилия" required>
+
+<p>2 вопрос<br> Ваше имя: </p>
+<input type="text" id="name" placeholder="Имя" required>
+
+<p>3 вопрос<br> Ваше отчество: </p>
+<input type="text" id="surname" placeholder="Отчество" required>
+
+<p>4 вопрос<br> Страна проживания: </p>
+<input type="hidden" placeholder="Страна" value="Беларусь">
+
+<p>5 вопрос<br> Выберите модель интересующего вас компьютера: </p>
+<input type="checkbox" placeholder="Фамилия" required>
+<label>ASUS</label>
+
+<p>Выберите кол-во гб: </p>
+<select>
+<option value="2 гб">2 гб</option>
+<option value="4 гб">4 гб</option>
+<option value="6 гб">6 гб</option>
+<option value="8 гб">8 гб</option>
+</select>
+
+<p>6 вопрос<br> Какое состояние ноутбука вас интересует? </p>
+<p><input type="radio" name="condition" placeholder="Состояние" required>Б/У<br>
+<input type="radio" name="condition" placeholder="Состояние" required>Новое<br>
+
+<p><b>Введите ваш отзыв:</b></p>
+<p><textarea rows="2" cols="15" name="comment" id="comment" placeholder="Ваш отзыв тут"></textarea></p>
+<p><input type="submit" value="Отправить"></p>
+
+<p>7 вопрос</p>
+<input type="email" name="email" placeholder="Введите ваш email" required>
+<p><input type="submit" value="Сохранить"></p>
+
+<button type="submit" value="submit">Отправить</button>
+
+
+</form>
+
+    </section>
+
+    <footer>
+    //////////////////
+</footer> -->
+<!-- </body>
+</html> -->
